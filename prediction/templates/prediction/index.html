@@ -1,0 +1,38 @@
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+</head>
+<body>
+
+<div style="width: 450px;padding: 20px;margin: auto;background-color:powderblue">
+<form method="post" >
+    {% csrf_token %}
+    <div class="row">
+        <div class="col">
+        <label for="stock_id">Stock ID:</label>
+        <input type="text" id="stock_id" name="stock_id" class="form-control" placeholder="TRY=X" >
+        </div>
+        <div class="col">
+        <label for="stock_id2">Stock ID 2:</label>
+        <input type="text" id="stock_id2" name="stock_id2" class="form-control" placeholder="JPY=X" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        <label for="date">Date:</label>
+        <input type="text" id="date" name="date" class="form-control" >
+        </div>
+        <div class="col">
+        <label for="date2">Date 2:</label>
+        <input type="text" id="date2" name="date2" class="form-control" >
+        </div>
+        <input type="submit" value="Prediction" class="btn btn-secondary btn-lg btn-block" style="margin: 20px">
+        <br>
+    </div>
+</form></div>
+</body>
+</html>
