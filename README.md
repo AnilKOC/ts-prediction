@@ -13,4 +13,5 @@ For the normalization and pre proccesing, sklearn.preproccesing's MinMaxScaler i
 For the prediction, i used Keras.
 For the visualization of the prediction, Matplotlib.
 
+For the video instruction: https://www.youtube.com/watch?v=gRMV525s6s8 (Turkish)
 
